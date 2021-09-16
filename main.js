@@ -9,7 +9,7 @@ function createWindow () {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
-	  contextIsolation: false
+	  contextIsolation: true
     },
   });
   mainWindow.loadFile('index.html');
@@ -19,6 +19,7 @@ function createWindow () {
   mainWindow.once('ready-to-show', () => {
   autoUpdater.checkForUpdatesAndNotify();
   });
+  mainWindow.maximize();
 }
 
 app.on('ready', () => {
