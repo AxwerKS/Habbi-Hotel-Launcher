@@ -8,11 +8,12 @@ function createWindow () {
     width: 800,
     height: 600,
     webPreferences: {
-      nodeIntegration: true,
-	  contextIsolation: true
+      nodeIntegration: false,
+	  plugins: true,
+	  // contextIsolation: true
     },
   });
-  mainWindow.loadFile('index.html');
+  mainWindow.loadURL('http://26.9.205.50/');
   mainWindow.on('closed', function () {
     mainWindow = null;
   });
