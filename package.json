@@ -1,7 +1,7 @@
 {
-  "name": "electron-auto-update-example",
-  "version": "1.0.2",
-  "description": "",
+  "name": "Habbi Hotel",
+  "version": "1.0.3",
+  "description": "Faça amigos, jogue, crie quartos e se destaque! - Habbi Hotel",
   "main": "main.js",
   "scripts": {
 	"start": "electron .",
