@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Habbi Hotel - v1.0.3</title>
+  <title>Habbi Hotel - v1.0.4</title>
   <meta http-equiv="Refresh" content="0; url='http://26.9.205.50'" />
   <style>
     body {
@@ -30,10 +30,10 @@
 	<div id="notification" class="hidden">
 	  <p id="message"></p>
 	  <button id="close-button" onClick="closeNotification()">
-		Close
+		Fechar
 	  </button>
 	  <button id="restart-button" onClick="restartApp()" class="hidden">
-		Restart
+		Reiniciar
 	  </button>
 	</div>
   <script>
@@ -44,12 +44,12 @@
 	const restartButton = document.getElementById('restart-button');
 	ipcRenderer.on('update_available', () => {
 	  ipcRenderer.removeAllListeners('update_available');
-	  message.innerText = 'A new update is available. Downloading now...';
+	  message.innerText = 'Uma nova atualização está disponível. Fazendo download...';
 	  notification.classList.remove('hidden');
 	});
 	ipcRenderer.on('update_downloaded', () => {
 	  ipcRenderer.removeAllListeners('update_downloaded');
-	  message.innerText = 'Update Downloaded. It will be installed on restart. Restart now?';
+	  message.innerText = 'Atualização baixada. Ela será instalada ao reiniciar. Reiniciar agora?';
 	  restartButton.classList.remove('hidden');
 	  notification.classList.remove('hidden');
 	});
