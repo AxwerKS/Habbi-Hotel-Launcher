@@ -1,7 +1,7 @@
 {
   "name": "Habbi",
   "productName": "Habbi Hotel",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Faça amigos, jogue, crie quartos e se destaque! - Habbi Hotel",
   "main": "main.js",
   "scripts": {
